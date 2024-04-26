@@ -2,6 +2,7 @@ const dotenv = require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const port = process.env.PORT || 3000;
 
 //imports
 const productRoute = require("./routes/product.route.js");
@@ -25,7 +26,7 @@ mongoose
   )
   .then(() => {
     console.log("DB connected");
-    app.listen(`${process.env.PORT}`, () => {
+    app.listen(`${port}`, () => {
       console.log("Listening on port 3000");
     });
   })
