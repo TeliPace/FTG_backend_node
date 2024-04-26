@@ -5,8 +5,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //imports
-const productRoute = require("./routes/product.route.js");
-const inventoryRoute = require("./routes/inventory.route.js");
+const productRoute = require("../routes/product.route.js");
+const inventoryRoute = require("../routes/inventory.route.js");
 
 //middleware
 app.use(express.json());
@@ -33,3 +33,5 @@ mongoose
   .catch(() => {
     console.log("Failed to connect to DB");
   });
+
+module.exports = app;
