@@ -7,6 +7,7 @@ const port = process.env.PORT || 3000;
 //imports
 const productRoute = require("./routes/product.route.js");
 const inventoryRoute = require("./routes/inventory.route.js");
+const orderRoute = require("./routes/order.route.js");
 
 //middleware
 app.use(express.json());
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 //routing
 app.use("/products", productRoute);
 app.use("/inventory", inventoryRoute);
+app.use("/order", orderRoute);
 
 app.get("/", (req, res) => {
   res.send("Hello, welcome to the FTG backend!");
