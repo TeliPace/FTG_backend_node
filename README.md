@@ -51,7 +51,7 @@
 `/order`\
 `POST`\
 **Description:** creates a new order in the database and returns the successfully created order.\
-**Example Request:**\
+**Example Request:**
 
 This is an example of the format your post request needs to follow to be accepted by the API. Required fields are commented.
 
