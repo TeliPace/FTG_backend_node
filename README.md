@@ -4,16 +4,16 @@
 
 ## Overview
 
-Tools: Built using Node.js, Express.js and MongoDB
-Description: This mini backend is made to mock the Huboo API endpoints for use in the [Pace Integration ltd](https://www.paceintegration.com/) Fast Track Graduate Business Case.
+**Tools:** Built using Node.js, Express.js and MongoDB\
+**Description:** This mini backend is made to mock the Huboo API endpoints for use in the [Pace Integration ltd](https://www.paceintegration.com/) Fast Track Graduate Business Case.
 
 ## Endpoints for Phase 1
 
-`/inventory`
-`GET`
-Description: Gets all items in inventory, returning an array of objects.
-QueryParams: ?sku={insert sku number here}
-Example response:
+`/inventory`\
+`GET`\
+**Description:** Gets all items in inventory, returning an array of objects.\
+**QueryParams:** ?sku={insert sku number here}\
+**Example response:**\
 
 `200`
 
@@ -48,12 +48,12 @@ Example response:
 
 ---
 
-`/order`
-`POST`
-Description: creates a new order in the database and returns the successfully created order.
-Example Request:
+`/order`\
+`POST`\
+**Description:** creates a new order in the database and returns the successfully created order.\
+**Example Request:**\
 
-This is an example of the format your post request needs to follow to be accepted by the API. Required fields are commented.
+This is an example of the format your post request needs to follow to be accepted by the API. Required fields are commented.\
 
 ```json
 {
@@ -95,8 +95,8 @@ This is an example of the format your post request needs to follow to be accepte
 }
 ```
 
-Example Response:
-`201` - Successfully created
+**Example Response:**\
+`201` - Successfully created\
 
 ```json
 {
